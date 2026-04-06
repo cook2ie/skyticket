@@ -8,11 +8,11 @@
 
 ## 🔗 Live Site
 
-- **Original Site**
-   👉 [SkyTicket 공식 사이트 바로가](https://ko.skyticket.com/)
+- **Original Site**  
+  👉 [skyticket 공식 사이트 바로가기](https://ko.skyticket.com/)
 
-- **RE-Design Site**
-   👉 [SkyTicket 리디자인 바로가기](https://cook2ie.github.io/skyticket/)
+- **Re-Design Site**  
+  👉 [skyticket 리디자인 바로가기](https://cook2ie.github.io/skyticket/)
 
 ---
 
