@@ -45,8 +45,6 @@
 ## 📸 Preview
 
 <img width="3804" height="1896" alt="image" src="https://github.com/user-attachments/assets/fc7f526f-1b85-4cd3-9e9a-53479ce74c96" />
-<img width="400" height="1263" alt="image" src="https://github.com/user-attachments/assets/b754121a-50dc-46e8-aa90-ad0eac5be1a0" />
-<img width="400" height="1257" alt="image" src="https://github.com/user-attachments/assets/fa8634d5-cf9c-4e4f-90f4-d1fe3824d52d" />
 
 
 ---
