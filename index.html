@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skyticket</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js" defer></script>
+    <link rel="icon" href="logo_copy.ico">
+
+</head>
+
+<body>
+
+    <!-- 승재 파트 -->
+
+
+    <!-- 데스크탑 요소 -->
+
+    <header id="mainHeader">
+        <h1>
+            <a href="#">skyticket</a>
+            <a href="#">
+                <p>by ADVENTURE</p>
+            </a>
+        </h1>
+        <ul class="nav">
+            <li class="nav-item"><a href="#">RESERVE</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">항공권예약</a></li>
+                    <li class="dropdown-item"><a href="#">예약안내</a></li>
+                    <li class="dropdown-item"><a href="#">운임안내</a></li>
+                    <li class="dropdown-item"><a href="#">여행지추천</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#">EVENT</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">추천특가</a></li>
+                    <li class="dropdown-item"><a href="#">프로모션</a></li>
+                    <li class="dropdown-item"><a href="#">제휴서비스</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#">SUPPORT</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">자주 묻는 질문</a></li>
+                    <li class="dropdown-item"><a href="#">실시간 문의</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#">NOTICE</a>
+                <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a href="#">회사소식</a></li>
+                    <li class="dropdown-item"><a href="#">인재채용</a></li>
+                    <li class="dropdown-item"><a href="#">이용약관</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- 반응형 모바일 요소 -->
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- 모바일 메뉴 -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav">
+                <li class="mobile-nav-item">
+                    <a href="#">RESERVE</a>
+                    <ul class="mobile-dropdown-menu">
+                        <li class="mobile-dropdown-item"><a href="#">항공권예약</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">예약안내</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">운임안내</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">여행지추천</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#">EVENT</a>
+                    <ul class="mobile-dropdown-menu">
+                        <li class="mobile-dropdown-item"><a href="#">추천특가</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">프로모션</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">제휴서비스</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#">SUPPORT</a>
+                    <ul class="mobile-dropdown-menu">
+                        <li class="mobile-dropdown-item"><a href="#">자주 묻는 질문</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">실시간 문의</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#">NOTICE</a>
+                    <ul class="mobile-dropdown-menu">
+                        <li class="mobile-dropdown-item"><a href="#">회사소식</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">인재채용</a></li>
+                        <li class="mobile-dropdown-item"><a href="#">이용약관</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="dropdown">
+            <div class="btn_menu">
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">로그인</a>
+                    <a href="#">예약취소</a>
+                    <a href="#">변경/취소</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="bg"></div>
+    </div>
+
+    <!-- 모바일 배경 -->
+    <div class="mobile_container">
+        <div class="mobile-bg"></div>
+    </div>
+
+    <div class="bg_text">
+        <p class="kr">바쁜 일상의 작은 쉼표가 되어줄</p>
+        <p class="eng">skyticket</p>
+    </div>
+
+
+    <!-- 모바일 퀵 메뉴 -->
+    <div class="mb_box">
+        <div class="mb_quick_menu">
+            <ul class="mb_quick_menu_nav">
+                <li class="mb_box1 active"><a href="#">항공권 예매</a></li>
+                <li class="mb_box2"><a href="#">예약 조회</a></li>
+                <li class="mb_box3"><a href="#">체크인</a></li>
+                <li class="mb_box4"><a href="#">스케줄</a></li>
+            </ul>
+
+            <!-- 탭 내용 컨테이너 -->
+            <div class="mb_tab-content-container">
+                <!-- 항공권 예매 내용 -->
+                <div class="mb_tab-content active" id="mb_content1">
+                    <div class="mb_tab-menu">
+
+                        <input type="radio" id="mb_tab1" name="mb_tab-group" checked>
+                        <label for="mb_tab1" class="mb_tab-item">
+                            <p>왕복</p>
+                        </label>
+
+                        <input type="radio" id="mb_tab2" name="mb_tab-group">
+                        <label for="mb_tab2" class="mb_tab-item">
+                            <p>편도</p>
+                        </label>
+
+                        <input type="radio" id="mb_tab3" name="mb_tab-group">
+                        <label for="mb_tab3" class="mb_tab-item">
+                            <p>경유</p>
+                        </label>
+                    </div>
+
+                    <div class="mb_toggle-date">
+                        <input type="checkbox" id="mb_dateToggle" class="mb_toggle-checkbox">
+                        <label for="mb_dateToggle" class="mb_toggle-label"></label>
+                        <span class="mb_toggle-text">
+                            <p>가까운 날짜 조회</p>
+                        </span>
+                    </div>
+
+                    <div class="mb_input-group_1">
+                        <label for="start" class="mb_start-label"></label>
+                        <input type="text" id="start" class="mb_start-input" placeholder="출발">
+                    </div>
+
+                    <div class="mb_input-group_2">
+                        <label for="start" class="mb_start-label"></label>
+                        <input type="text" id="start" class="mb_start-input" placeholder="도착">
+                    </div>
+
+                    <div class="mb_input-group_3">
+                        <label for="username" class="mb_custom-label">탑승일</label>
+                        <input type="text" id="username" class="mb_custom-input" placeholder="">
+                    </div>
+                    <div class="mb_input-group_4">
+                        <label for="username" class="mb_custom-label">탑승객</label>
+                        <input type="text" id="username" class="mb_custom-input" placeholder="">
+                    </div>
+                    <div class="mb_input-group_5">
+                        <label for="username" class="mb_custom-label">좌석 등급</label>
+                        <input type="text" id="username" class="mb_custom-input" placeholder="">
+                    </div>
+
+                    <div class="mb_button">
+                        <button class="mb_cyan">최저가 검색</button>
+                        <button class="mb_navy">항공권 검색</button>
+                    </div>
+                    <div class="mb_bt_1"></div>
+                </div>
+
+                <!-- 예약 조회 내용 -->
+                <div class="mb_tab-content" id="mb_content2">
+                    <div class="mb_reservation-search">
+                        <div class="mb_input-group">
+                            <label for="reservation-number">예약 번호</label>
+                            <input type="text" id="reservation-number" placeholder="예약 번호 입력">
+                        </div>
+                        <div class="mb_input-group">
+                            <label for="passenger-name">승객 이름</label>
+                            <input type="text" id="passenger-name" placeholder="승객 이름 입력">
+                        </div>
+                        <button class="mb_search-btn">조회하기</button>
+                    </div>
+                </div>
+
+                <!-- 체크인 내용 -->
+                <div class="mb_tab-content" id="mb_content3">
+                    <div class="mb_checkin-content">
+                        <div class="mb_input-group">
+                            <label for="checkin-number">예약 번호</label>
+                            <input type="text" id="checkin-number" placeholder="예약 번호 입력">
+                        </div>
+                        <div class="mb_input-group">
+                            <label for="last-name">승객 이름</label>
+                            <input type="text" id="last-name" placeholder="승객 이름 입력">
+                        </div>
+                        <button class="mb_checkin-btn">체크인하기</button>
+                    </div>
+                </div>
+
+                <!-- 스케줄 내용 -->
+                <div class="mb_tab-content" id="mb_content4">
+                    <div class="mb_schedule-content">
+                        <div class="mb_input-group">
+                            <label for="departure-airport">출발 공항</label>
+                            <input type="text" id="departure-airport" placeholder="공항 코드 또는 이름">
+                        </div>
+                        <div class="mb_input-group">
+                            <label for="arrival-airport">도착 공항</label>
+                            <input type="text" id="arrival-airport" placeholder="공항 코드 또는 이름">
+                        </div>
+                        <div class="mb_input-group">
+                            <label for="flight-date">날짜</label>
+                            <input type="date" id="flight-date">
+                        </div>
+                        <button class="mb_schedule-btn">스케줄 검색</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 데스크탑 파트 -->
+
+        <div class="quick_menu">
+            <ul class="quick_menu_nav">
+                <li class="box1 active"><a href="#">항공권 예매</a></li>
+                <li class="box2"><a href="#">예약 조회</a></li>
+                <li class="box3"><a href="#">체크인</a></li>
+                <li class="box4"><a href="#">스케줄</a></li>
+            </ul>
+
+            <!-- 탭 내용 컨테이너 -->
+            <div class="tab-content-container">
+                <!-- 항공권 예매 내용 -->
+                <div class="tab-content active" id="content1">
+                    <div class="tab-menu">
+                        <input type="radio" id="tab1" name="tab-group" checked>
+                        <label for="tab1" class="tab-item">
+                            <p>왕복</p>
+                        </label>
+
+                        <input type="radio" id="tab2" name="tab-group">
+                        <label for="tab2" class="tab-item">
+                            <p>편도</p>
+                        </label>
+
+                        <input type="radio" id="tab3" name="tab-group">
+                        <label for="tab3" class="tab-item">
+                            <p>경유</p>
+                        </label>
+                        <div class="toggle-container">
+                            <input type="radio" name="toggle" id="on" checked>
+                            <input type="radio" name="toggle" id="off">
+
+                            <label for="on" class="toggle-btn">일반</label>
+                            <label for="off" class="toggle-btn">쿠폰</label>
+                        </div>
+                        <div class="toggle-date">
+                            <input type="checkbox" id="dateToggle" class="toggle-checkbox">
+                            <label for="dateToggle" class="toggle-label"></label>
+                            <span class="toggle-text">가까운 날짜 조회</span>
+                        </div>
+                        <div class="input-group_1">
+                            <label for="start" class="start-label"></label>
+                            <input type="text" id="start" class="start-input" placeholder="출발">
+                        </div>
+                        <div class="input-group_2">
+                            <label for="start" class="start-label"></label>
+                            <input type="text" id="start" class="start-input" placeholder="도착">
+                        </div>
+                        <div class="input-group_3">
+                            <label for="username" class="custom-label">탑승일</label>
+                            <input type="text" id="username" class="custom-input" placeholder="">
+                        </div>
+                        <div class="input-group_4">
+                            <label for="username" class="custom-label">탑승객</label>
+                            <input type="text" id="username" class="custom-input" placeholder="">
+                        </div>
+                        <div class="input-group_5">
+                            <label for="username" class="custom-label">좌석 등급</label>
+                            <input type="text" id="username" class="custom-input" placeholder="">
+                        </div>
+
+                        <div class="button">
+                            <button class="cyan">최저가 검색</button>
+                            <button class="navy">항공권 검색</button>
+                        </div>
+                    </div>
+                    <div class="bt_1"></div>
+                </div>
+
+                <!-- 예약 조회 내용 -->
+                <div class="tab-content" id="content2">
+                    <div class="reservation-search">
+                        <div class="input-group">
+                            <label for="reservation-number">예약 번호</label>
+                            <input type="text" id="reservation-number" placeholder="예약 번호 입력">
+                        </div>
+                        <div class="input-group">
+                            <label for="passenger-name">승객 이름</label>
+                            <input type="text" id="passenger-name" placeholder="승객 이름 입력">
+                        </div>
+                        <button class="search-btn">조회하기</button>
+                    </div>
+                </div>
+
+                <!-- 체크인 내용 -->
+                <div class="tab-content" id="content3">
+                    <div class="checkin-content">
+                        <div class="input-group">
+                            <label for="checkin-number">예약 번호</label>
+                            <input type="text" id="checkin-number" placeholder="예약 번호 입력">
+                        </div>
+                        <div class="input-group">
+                            <label for="last-name">승객 이름</label>
+                            <input type="text" id="last-name" placeholder="승객 이름 입력">
+                        </div>
+                        <button class="checkin-btn">체크인하기</button>
+                    </div>
+                </div>
+
+                <!-- 스케줄 내용 -->
+                <div class="tab-content" id="content4">
+                    <div class="schedule-content">
+                        <div class="input-group">
+                            <label for="departure-airport">출발 공항</label>
+                            <input type="text" id="departure-airport" placeholder="공항 코드 또는 이름">
+                        </div>
+                        <div class="input-group">
+                            <label for="arrival-airport">도착 공항</label>
+                            <input type="text" id="arrival-airport" placeholder="공항 코드 또는 이름">
+                        </div>
+                        <div class="input-group">
+                            <label for="flight-date">날짜</label>
+                            <input type="date" id="flight-date">
+                        </div>
+                        <button class="schedule-btn">스케줄 검색</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- 미경 파트 -->
+    <div class="bottom">
+        <section class="section0">
+            <div class="ms1">
+                <h1><span>지금 가장 주목받는</span> 여행지</span></h1>
+            </div>
+        </section>
+<div class="laybox">
+            <div class="box_1">
+                <div class="slider1">
+                    <div class="slide"><img src="imges/ms1/01유럽.jpg" alt="유럽"></div>
+                    <div class="slide"><img src="imges/ms1/02유럽.jpg" alt="유럽2"></div>
+                    <div class="slide"><img src="imges/ms1/03괌.jpg" alt="괌"></div>
+                    <div class="slide"><img src="imges/ms1/04다낭.jpg" alt="다낭"></div>
+                    <div class="slide"><img src="imges/ms1/05그리스.jpg" alt="그리스"></div>
+                    <div class="slide"><img src="imges/ms1/01유럽.jpg" alt="유럽"></div>
+                    <div class="slide"><img src="imges/ms1/02유럽.jpg" alt="유럽"></div>
+                    <div class="slide"><img src="imges/ms1/03괌.jpg" alt="괌"></div>
+                    <div class="slide"><img src="imges/ms1/04다낭.jpg" alt="다낭"></div>
+                    <div class="slide"><img src="imges/ms1/05그리스.jpg" alt="그리스"></div>
+                </div>
+                <div class="slider2">
+                    <div class="slide"><img src="imges/ms1/06독일.jpg" alt="독일"></div>
+                    <div class="slide"><img src="imges/ms1/07대만.jpg" alt="대만"></div>
+                    <div class="slide"><img src="imges/ms1/08멕시코.jpg" alt="멕시코"></div>
+                    <div class="slide"><img src="imges/ms1/09파리.jpg" alt="파리"></div>
+                    <div class="slide"><img src="imges/ms1/10러시모어산.jpg" alt="러시모어산"></div>
+                    <div class="slide"><img src="imges/ms1/06독일.jpg" alt="독일"></div>
+                    <div class="slide"><img src="imges/ms1/07대만.jpg" alt="대만"></div>
+                    <div class="slide"><img src="imges/ms1/08멕시코.jpg" alt="멕시코"></div>
+                    <div class="slide"><img src="imges/ms1/09파리.jpg" alt="파리"></div>
+                    <div class="slide"><img src="imges/ms1/10러시모어산.jpg" alt="러시모어산"></div>
+                </div>
+                <div class="slider3">
+                    <div class="slide"><img src="imges/ms1/11자유의여신상.jpg" alt="자유의여신상"></div>
+                    <div class="slide"><img src="imges/ms1/12부다페스트.jpg" alt="부다페스트"></div>
+                    <div class="slide"><img src="imges/ms1/13스위스.jpg" alt="스위스"></div>
+                    <div class="slide"><img src="imges/ms1/14런던 브릿지.jpg" alt="런던브릿지"></div>
+                    <div class="slide"><img src="imges/ms1/15이탈리아.jpg" alt="이탈리아"></div>
+                    <div class="slide"><img src="imges/ms1/11자유의여신상.jpg" alt="자유의여신상"></div>
+                    <div class="slide"><img src="imges/ms1/12부다페스트.jpg" alt="부다페스트"></div>
+                    <div class="slide"><img src="imges/ms1/13스위스.jpg" alt="스위스"></div>
+                    <div class="slide"><img src="imges/ms1/14런던 브릿지.jpg" alt="런던브릿지"></div>
+                    <div class="slide"><img src="imges/ms1/15이탈리아.jpg" alt="이탈리아"></div>
+                </div>
+            </div>
+</div>
+        <div class="most"><img src="imges/text_big.png" alt="The most popular travel">
+            <!-- <h2>The most popular trave</h2> --></div>
+
+
+        <!-- 두번째 -->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+        <section class="section1">
+            <div class="ms2">
+                <h1><span>빠른여행지</span>추천</span></h1>
+
+                <div #swiperRef="" class="swiper mainslide2">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="imges/ms2/01가오슝.jpg" alt="가오슝">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">가오슝</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">208,220~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"><img src="imges/ms2/02광저우.jpg" alt="광저우">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">광저우</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">183,289~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"><img src="imges/ms2/03리스본.jpg" alt="리스본">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">리스본</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">708,328~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"><img src="imges/ms2/04마카오.jpg" alt="마키오">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">마카오</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">194,856~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"><img src="imges/ms2/05스페인.jpg" alt="스페인">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">스페인</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">671,275~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"><img src="imges/ms2/06싱가포르.jpg" alt="싱가포르">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">싱가포르</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">224,254~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"><img src="imges/ms2/07호주.jpg" alt="호주">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">호주</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">499,435~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"><img src="imges/ms2/08헐리우드.jpg" alt="미국">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">미국</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">711,811~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="swiper-slide"><img src="imges/ms2/09캐나다.jpg" alt="캐나다">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">캐나다</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">712,575~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide"><img src="imges/ms2/10브라질.jpg" alt="브라질">
+                            <div class="tag">
+                                <div class="tag-content">
+                                    <span class="city">브라질</span>
+                                    <div class="row">
+                                        <span class="krw">KRW</span>
+                                        <span class="money">655,435~</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+
+            <!-- 두번째 -->
+
+            <script>
+                var swiper = new Swiper(".mainslide2", {
+                    slidesPerView: 2,
+                    centeredSlides: true,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+
+            </script>
+        </section>
+
+        <!-- uouououuouuuououououououououo -->
+        <section class="section2">
+            <h1><span>진행중인</span>이벤트</h1>
+            <div class="event">
+                <img src="imges/이벤트배너/카드이벤트.png" alt="카드이벤트">
+                <img src="imges/이벤트배너/좌석승급.png" alt="좌석승급">
+            </div>
+        </section>
+        <section class="section3">
+            <h1>공지사항<span>안내</span></h1>
+            <div class="notice">
+                <img src="imges/icon/확성기.gif" alt="확성기">
+
+                <div class="nt1">
+                    <a href="#">
+                        <p><span class="notice-color">[공지] </span>다자녀가구 우선 출국 서비스 이용 안내</p>
+                    </a>
+                    <a href="#">
+                        <p><span>[일반] </span>2025년 7월 신용카드 무이자 할부 안내</p>
+                    </a>
+                    <a href="#">
+                        <p><span class="notice-color">[공지] </span>스카이티켓 사칭 웹사이트 및 보이스피싱 주의</p>
+                    </a>
+                </div>
+                <div class="nt2">
+                    <a href="#">
+                        <p> <span>[유류할증료] </span>2025년 10월 국내선 유류할증료 안내</p>
+                    </a>
+                    <a href="#">
+                        <p><span>[일반] </span>스카이티켓 '개인정보 처리방침' 개정 안내</p>
+                    </a>
+                    <a href="#">
+                        <p><span class="notice-color">[공지] </span>보조배터리 반입 및 보관 안내</p>
+                    </a>
+                </div>
+        </section>
+        <section class="section4">
+            <h1>제휴서비스<span>안내</span></h1>
+            <div class="service-container">
+                <div class="service">
+                    <img src="imges/icon/호텔.gif" alt="호텔">
+
+                    <p><span>호텔</span>
+                        <br><br>더 빠르고 스마트한 숙박예약
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="imges/icon/렌터카.gif" alt="렌터카">
+
+                    <p><span>렌터카</span>
+                        <br><br>전세계 렌터카 <br>Rentalcars.com
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="imges/icon/마일리지.gif" alt="마일리지">
+
+                    <p><span>마일리지 적립</span>
+                        <br><br>제휴 신용카드를 사용하고
+                        <br>마일리지를 적립하세요!
+                    </p>
+                </div>
+                <div class="service">
+                    <img src="imges/icon/여행자 보험.gif" alt="여행자 보험">
+
+                    <p><span>여행자 보험</span>
+                        <br><br>해외여행의 필수품! <br> 메리츠 여행자보험
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <img class="footer-logo" src="imges/logo.png" alt="로고"></img>
+            <div class="footer-bg">
+                <div class="footer-wrap">
+                    <div class="footer-left">
+                        <p>상호명 : 주식회사 어드벤처코리아</p>
+                        <p>주소 : 서울특별시 중구 서소문로89, 8층 812호 (순화동, 순화빌딩)</p>
+                        <p>전화번호 : 070 - 4220 - 6949</p>
+                        <p>대표자 : 호소야 치나츠</p>
+                    </div>
+                    <div class="footer-right">
+                        <p>사업자등록번호 : 341 - 87 - 02569</p>
+                        <p>관광사업자등록번호 : 제2022 - 000095호</p>
+                        <p>통신판매업 등록 번호 : 제2022 - 서울중구 - 2288호</p>
+                        <span class="icon-sns">
+                            <div><img class="icon-in1" src="imges/icon/유튜브.png" alt="youtube"></div>
+                            <div><img class="icon-in2" src="imges/icon/인스타.png" alt="insta"></div>
+                            <div><img class="icon-in3" src="imges/icon/페이스북.png" alt="facebook"></div>
+                            <div><img class="icon-in4" src="imges/icon/트위터.png" alt="twit"></div>
+                        </span>
+                    </div>
+                </div>
+                <p class="copy">&copy; 2025 ADVENTURE inc. All rights reserved.</p>
+            </div>
+            <a href="#" class="gotop">
+                <img src="imges/gotop.png" alt="#"></a>
+        </footer>
+
+    </div>
+</body>
+
+</html>
