@@ -1,4 +1,4 @@
-# ✈️ SkyTicket Web Redesign (Personal Project)
+# ✈️ SkyTicket Web Re-Design (Personal Project)
 
 기존 항공권 예매 사이트를 바탕으로,  
 정보 전달 중심의 구조는 유지하면서도  
@@ -9,10 +9,10 @@
 ## 🔗 Live Site
 
 - **Original Site**
- 👉 [SkyTicket 공식 사이트 바로가](https://ko.skyticket.com/)
+   👉 [SkyTicket 공식 사이트 바로가](https://ko.skyticket.com/)
 
 - **RE-Design Site**
- 👉 [SkyTicket 리디자인 바로가기](https://cook2ie.github.io/skyticket/)
+   👉 [SkyTicket 리디자인 바로가기](https://cook2ie.github.io/skyticket/)
 
 ---
 
