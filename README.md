@@ -8,6 +8,10 @@
 
 ## 🔗 Live Site
 
+- Original Site
+👉 [SkyTicket 공식 사이트 바로가](https://ko.skyticket.com/)
+
+- Redesign Site
 👉 [SkyTicket 리디자인 바로가기](https://cook2ie.github.io/skyticket/)
 
 ---
@@ -39,8 +43,7 @@
 
 ## 📸 Preview
 
-![Uploading image.png…]()
-
+<img width="3804" height="1896" alt="image" src="https://github.com/user-attachments/assets/fc7f526f-1b85-4cd3-9e9a-53479ce74c96" />
 
 ---
 
